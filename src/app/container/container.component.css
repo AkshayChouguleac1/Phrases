@@ -11,9 +11,6 @@
     justify-content: center;
   }
   
-  .example-sidenav {
-    padding: 20px;
-  }
 
   mat-drawer{
     width: 300px;;
@@ -24,5 +21,7 @@
 }
 
 .matChipOption{
+  margin-top: 10px;
   height: 70px;
+  width: 100%;
 }
