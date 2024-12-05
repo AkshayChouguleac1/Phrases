@@ -1,0 +1,16 @@
+<svg (click)="drawer.toggle()" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-text-paragraph" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5"/>
+  </svg>
+  
+  <mat-drawer-container  class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-chip-list class="mat-mdc-chip-set-stacked" aria-label="Cutest dog breeds">
+          <mat-chip-option class="button-63 matChipOption" routerLink="" (click)="drawer.toggle()">ADD NEW ITEM</mat-chip-option>
+          <mat-chip-option class="button-63 matChipOption" routerLink="practice" (click)="drawer.toggle()">PRACTICE</mat-chip-option>
+          <mat-chip-option class="button-63 matChipOption" routerLink="download" (click)="drawer.toggle()">DOWNLOAD DATA</mat-chip-option>
+        </mat-chip-list> 
+      </mat-drawer>
+      <ng-content>
+      </ng-content>
+  </mat-drawer-container>
+  

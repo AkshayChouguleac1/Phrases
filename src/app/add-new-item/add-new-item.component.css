@@ -1,0 +1,22 @@
+.basic-container .mat-step-header .mat-step-icon-selected {
+    background-color: #6cb73a;
+    color: #fff;
+  }
+  
+  .mat-step-header .mat-step-icon {
+      background-color: rgba(167, 35, 35, 0.54);
+      color: #fff;
+  }
+
+  .stepper-label {
+    color:rgb(250, 250, 250);
+}
+
+.formStyle{
+  width: 500px;
+  padding: 20px;
+}
+
+textarea.form-control {
+  height: 200px;
+}

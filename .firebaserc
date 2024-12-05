@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "english-phrases-faf12": {
+      "hosting": {
+        "phrases": [
+          "english-phrases-faf12"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "english-phrases-faf12"
+  }
+}

@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+      <div id="ms-container">
+        <mat-form-field style="padding: 100px;">
+          <mat-label>Category.</mat-label>
+          <mat-select (selectionChange)="changeType($event)">
+              <mat-option mat-option value="Phrase">Phrase</mat-option>
+              <mat-option mat-option value="Vocabulary">Vocabulary</mat-option>
+              <mat-option mat-option value="Sentence">Sentence</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <label for="ms-download">
+          <div class="ms-content" (click)="download()">
+            <div class="ms-content-inside">
+              <input type="checkbox" id="ms-download" [disabled]="isCategoryNotSelected"/>
+              <div class="ms-line-down-container">
+                <div class="ms-line-down"></div>
+              </div>
+              <div class="ms-line-point"></div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>

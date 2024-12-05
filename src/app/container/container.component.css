@@ -1,0 +1,28 @@
+.example-container {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-image: url("../../assets/background.jpg");
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  mat-drawer{
+    width: 300px;;
+  }
+  .mat-drawer.mat-drawer-side {
+    z-index: 2;
+    background-color: currentcolor;
+}
+
+.matChipOption{
+  height: 70px;
+}

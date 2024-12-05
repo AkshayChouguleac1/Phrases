@@ -1,0 +1,46 @@
+
+
+<mat-form-field style="padding: 10px;background-color: aliceblue;opacity: 0.5;">
+    <mat-label >Select an option</mat-label>
+    <mat-select (selectionChange)="changeType($event)">
+        <mat-option mat-option value="Phrase">Phrase</mat-option>
+        <mat-option mat-option value="Vocabulary">Vocabulary</mat-option>
+        <mat-option mat-option value="Sentence">Sentence</mat-option>
+    </mat-select>
+</mat-form-field>
+<div *ngIf="TypeOfItem.length>0">
+    <div style="padding:20px;">
+        <div style="padding:10px;">
+            <h1 style="color: rgb(111, 244, 10);">{{currentElement.currentWord}}</h1>
+            <hr>
+            <mat-card-content style="word-wrap: break-word;color: white;">
+                <h3>{{currentElement.description}}</h3>
+            </mat-card-content>
+        </div>
+    </div>
+    
+    <div class="card bg-dark p-5" style="display: flex;position: fixed; bottom: 0;width: 100%;">
+        <div class="card bg-dark" style="width: 100%;align-items: center;">
+            <mat-card-content>
+                <mat-card-content style="display: flex;">
+                    <div (click)="searchMeaningOnGoogle()">
+                        <button class="button-63">Means ?</button>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div (click)="searchSentenceUseOnGoogle()">
+                        <button class="button-63">Use ?</button>
+                    </div>
+                </mat-card-content>
+                <hr>
+                <div style="display: flex;float: right;">
+                        <button class="button-10" (click)="showPrevString()" >PREV</button> 
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="button-10" (click)="showNextString()" >NEXT</button>
+                        
+                </div>
+            </mat-card-content>  
+        </div>
+    </div>
+</div>
+
+
